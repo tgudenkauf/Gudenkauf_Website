@@ -1,0 +1,11 @@
+h1 {
+	font-size:4em;
+	color:#2196f3;
+	background-color:black;
+	text-align:center;
+	font-family:'Serif';
+	text-decoration:underline;
+	margin-top:0px;
+	margin-bottom:0px;
+    border-style: solid;
+}
