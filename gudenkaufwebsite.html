@@ -11,14 +11,14 @@
 <body>
 	<h1>The Gudenkauf Website</h1>
 	<div class="tab">
-	  <button class="tablinks" style="margin-left:8px;">Kevin</button>
-	  <button class="tablinks">Keith</button>
-	  <button class="tablinks">Dave</button>
-		<button class="tablinks">Doug</button>
-		<button class="tablinks">Karla</button>
-		<button class="tablinks">Ann</button>
+	  <button class="tablinks" onclick="clicked('familypic.JPG')" style="margin-left:8px;">Kevin</button>
+	  <button class="tablinks" onclick="clicked('keith.jpg')">Keith</button>
+	  <button class="tablinks" onclick="clicked('dave.jpg')">Dave</button>
+		<button class="tablinks" onclick="clicked('doug.jpg')">Doug</button>
+		<button class="tablinks" onclick="clicked('karla.JPG')">Karla</button>
+		<button class="tablinks" onclick="clicked('ann.jpg')">Ann</button>
 	</div>
-	<a href="http://findanewfamily.com/defaultsite" target="_blank"><img src="familypic.JPG" style="height:50vh;" /></a>
+	<a href="http://findanewfamily.com/defaultsite" target="_blank"><img id="pic" src="familypic.JPG" style="height:50vh;" /></a>
 	<div class="quote">
 		<p>"No family is perfect..we argue, we fight. We even stop talking to each other at times, but in the end, family
 			is family..the love will always be there."</p>
@@ -36,35 +36,40 @@
 			<th>Relation</th>
 		</tr>
 		<tr>
-			<td>Kayla Gudenkauf</td>
-			<td>19</td>
-			<td>Sister</td>
+			<td id="fr1">Kayla Gudenkauf</td>
+			<td id="fr2">19</td>
+			<td id="fr3">Sister</td>
 		</tr>
-		<tr>
-			<td>Travis Gudenkauf</td>
-			<td>22</td>
-			<td>Myself</td>
+		<tr class ="row">
+			<td id="sr1">Travis Gudenkauf</td>
+			<td id="sr2">22</td>
+			<td id="sr3">Myself</td>
 		</tr>
-		<tr>
-			<td>Wesley Gudenkauf</td>
-			<td>24</td>
-			<td>Brother</td>
+		<tr class ="row">
+			<td id="tr1">Wesley Gudenkauf</td>
+			<td id="tr2">24</td>
+			<td id="tr3">Brother</td>
 		</tr>
-		<tr>
-			<td>Alex Gudenkauf</td>
-			<td>25</td>
-			<td>Brother</td>
+		<tr class ="row">
+			<td id="for1">Alex Gudenkauf</td>
+			<td id="for2">25</td>
+			<td id="for3">Brother</td>
 		</tr>
-		<tr>
-			<td>Kathleen Gudenkauf</td>
-			<td>54</td>
-			<td>Mother</td>
+		<tr class ="row">
+			<td id="fir1">Kathleen Gudenkauf</td>
+			<td id="fir2">54</td>
+			<td id="fir3">Mother</td>
 		</tr>
-		<tr>
-			<td>Kevin Gudenkauf</td>
-			<td>55</td>
-			<td>Father</td>
+		<tr class ="row">
+			<td id="sir1">Kevin Gudenkauf</td>
+			<td id="sir2">55</td>
+			<td id="sir3">Father</td>
 		</tr>
 	</table>
 </body>
 </html>
+<script>
+function clicked(pic) {
+	document.getElementById("pic").src = pic;
+}
+</script>
