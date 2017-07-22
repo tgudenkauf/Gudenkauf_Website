@@ -6,17 +6,18 @@
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Calligraffitti|Dancing+Script|Gloria+Hallelujah|Great+Vibes|Indie+Flower|Pacifico|Permanent+Marker|Shadows+Into+Light" rel="stylesheet">
 	<link href="gudenkauf.css" rel="stylesheet">
+	<script src="gudenkaufJavaScript.js" type="text/javascript"></script>
 	<link href="kayla.jpg" rel="icon">
 </head>
 <body>
 	<h1>The Gudenkauf Website</h1>
 	<div class="tab">
-	  <button class="tablinks" onclick="clicked('familypic.JPG')" style="margin-left:8px;">Kevin</button>
-	  <button class="tablinks" onclick="clicked('keith.jpg')">Keith</button>
-	  <button class="tablinks" onclick="clicked('dave.jpg')">Dave</button>
-		<button class="tablinks" onclick="clicked('doug.jpg')">Doug</button>
-		<button class="tablinks" onclick="clicked('karla.JPG')">Karla</button>
-		<button class="tablinks" onclick="clicked('ann.jpg')">Ann</button>
+	  <button class="tablinks" onclick="clicked('familypic.JPG','Kevin',6)" style="margin-left:8px;">Kevin</button>
+	  <button class="tablinks" onclick="clicked('keith.jpg','Keith',7)">Keith</button>
+	  <button class="tablinks" onclick="clicked('dave.jpg','Dave',2)">Dave</button>
+		<button class="tablinks" onclick="clicked('doug.jpg','Doug',4)">Doug</button>
+		<button class="tablinks" onclick="clicked('karla.JPG','Karla',1)">Karla</button>
+		<button class="tablinks" onclick="clicked('ann.jpg','Ann',1)">Ann</button>
 	</div>
 	<a href="http://findanewfamily.com/defaultsite" target="_blank"><img id="pic" src="familypic.JPG" style="height:50vh;" /></a>
 	<div class="quote">
@@ -35,41 +36,41 @@
 			<th>Age</th>
 			<th>Relation</th>
 		</tr>
-		<tr>
-			<td id="fr1">Kayla Gudenkauf</td>
-			<td id="fr2">19</td>
-			<td id="fr3">Sister</td>
+		<tr class="row">
+			<td id="frName">Kayla Gudenkauf</td>
+			<td id="frAge">19</td>
+			<td id="frRel">Sister</td>
 		</tr>
 		<tr class ="row">
-			<td id="sr1">Travis Gudenkauf</td>
-			<td id="sr2">22</td>
-			<td id="sr3">Myself</td>
+			<td id="srName">Travis Gudenkauf</td>
+			<td id="srAge">22</td>
+			<td id="srRel">Myself</td>
 		</tr>
 		<tr class ="row">
-			<td id="tr1">Wesley Gudenkauf</td>
-			<td id="tr2">24</td>
-			<td id="tr3">Brother</td>
+			<td id="trName">Wesley Gudenkauf</td>
+			<td id="trAge">24</td>
+			<td id="trRel">Brother</td>
 		</tr>
 		<tr class ="row">
-			<td id="for1">Alex Gudenkauf</td>
-			<td id="for2">25</td>
-			<td id="for3">Brother</td>
+			<td id="forName">Alex Gudenkauf</td>
+			<td id="forAge">25</td>
+			<td id="forRel">Brother</td>
 		</tr>
 		<tr class ="row">
-			<td id="fir1">Kathleen Gudenkauf</td>
-			<td id="fir2">54</td>
-			<td id="fir3">Mother</td>
+			<td id="firName">Kathleen Gudenkauf</td>
+			<td id="firAge">54</td>
+			<td id="firRel">Mother</td>
 		</tr>
 		<tr class ="row">
-			<td id="sir1">Kevin Gudenkauf</td>
-			<td id="sir2">55</td>
-			<td id="sir3">Father</td>
+			<td id="sirName">Kevin Gudenkauf</td>
+			<td id="sirAge">55</td>
+			<td id="sirRel">Father</td>
+		</tr>
+		<tr class="row" style="display:none;">
+			<td id="serName">Keith Gudenkauf</td>
+			<td id="serAge">55</td>
+			<td id="serRel">Uncle</td>
 		</tr>
 	</table>
 </body>
 </html>
-<script>
-function clicked(pic) {
-	document.getElementById("pic").src = pic;
-}
-</script>
