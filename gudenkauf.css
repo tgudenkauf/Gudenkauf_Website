@@ -70,9 +70,9 @@ img {
 }
 
 .tab {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-row: 45px;
+	left:auto;
+	right: auto;
+	margin:5px 0px 15px 0px;
 }
 
 .tablinks {
